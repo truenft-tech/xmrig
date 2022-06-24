@@ -53,6 +53,7 @@ static const CoinInfo coinInfo[] = {
     { Algorithm::ASTROBWT_DERO_2, "DERO_HE",  "DERO_HE",      0,      0,              BLUE_BG_BOLD(   WHITE_BOLD_S " dero_he ") },
     { Algorithm::RX_GRAFT,        "GRFT",     "Graft",        120,    10000000000,    BLUE_BG_BOLD(   WHITE_BOLD_S " graft   ") },
     { Algorithm::RX_KEVA,         "KVA",      "Kevacoin",     0,      0,              MAGENTA_BG_BOLD(WHITE_BOLD_S " keva    ") },
+    { Algorithm::RX_TNFT,         "TNFT",     "Tnftcoin",     0,      0,              MAGENTA_BG_BOLD(WHITE_BOLD_S " tnft    ") },
     { Algorithm::KAWPOW_RVN,      "RVN",      "Ravencoin",    0,      0,              BLUE_BG_BOLD(   WHITE_BOLD_S " raven   ") },
     { Algorithm::RX_WOW,          "WOW",      "Wownero",      300,    100000000000,   MAGENTA_BG_BOLD(WHITE_BOLD_S " wownero ") },
 };

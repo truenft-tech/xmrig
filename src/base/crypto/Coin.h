@@ -39,6 +39,7 @@ public:
         DERO_HE,
         GRAFT,
         KEVA,
+        TNFT,
         RAVEN,
         WOWNERO,
         MAX

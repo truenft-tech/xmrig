@@ -82,6 +82,7 @@ const char *Algorithm::kRX_ARQ          = "rx/arq";
 const char *Algorithm::kRX_GRAFT        = "rx/graft";
 const char *Algorithm::kRX_SFX          = "rx/sfx";
 const char *Algorithm::kRX_KEVA         = "rx/keva";
+const char *Algorithm::kRX_TNFT         = "rx/tnft";
 #endif
 
 #ifdef XMRIG_ALGO_ARGON2
@@ -154,6 +155,7 @@ static const std::map<uint32_t, const char *> kAlgorithmNames = {
     ALGO_NAME(RX_GRAFT),
     ALGO_NAME(RX_SFX),
     ALGO_NAME(RX_KEVA),
+    ALGO_NAME(RX_TNFT),
 #   endif
 
 #   ifdef XMRIG_ALGO_ARGON2
@@ -274,6 +276,9 @@ static const std::map<const char *, Algorithm::Id, aliasCompare> kAlgorithmAlias
                                     ALGO_ALIAS(RX_SFX,          "randomsfx"),
     ALGO_ALIAS_AUTO(RX_KEVA),       ALGO_ALIAS(RX_KEVA,         "randomx/keva"),
                                     ALGO_ALIAS(RX_KEVA,         "randomkeva"),
+    ALGO_ALIAS_AUTO(RX_TNFT),       ALGO_ALIAS(RX_TNFT,         "randomx/tnft"),
+                                    ALGO_ALIAS(RX_TNFT,         "randomtnft"),
+                                    
 #   endif
 
 #   ifdef XMRIG_ALGO_ARGON2
@@ -368,7 +373,7 @@ std::vector<xmrig::Algorithm> xmrig::Algorithm::all(const std::function<bool(con
         CN_HEAVY_0, CN_HEAVY_TUBE, CN_HEAVY_XHV,
         CN_PICO_0, CN_PICO_TLO,
         CN_UPX2,
-        RX_0, RX_WOW, RX_ARQ, RX_GRAFT, RX_SFX, RX_KEVA,
+        RX_0, RX_WOW, RX_ARQ, RX_GRAFT, RX_SFX, RX_KEVA, RX_TNFT,
         AR2_CHUKWA, AR2_CHUKWA_V2, AR2_WRKZ,
         ASTROBWT_DERO, ASTROBWT_DERO_2,
         KAWPOW_RVN,

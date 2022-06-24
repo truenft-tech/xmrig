@@ -1,8 +1,6 @@
 /*
 Copyright (c) 2018-2019, tevador <tevador@gmail.com>
-
 All rights reserved.
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 	* Redistributions of source code must retain the above copyright
@@ -13,7 +11,6 @@ modification, are permitted provided that the following conditions are met:
 	* Neither the name of the copyright holder nor the
 	  names of its contributors may be used to endorse or promote products
 	  derived from this software without specific prior written permission.
-
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -103,6 +100,13 @@ RandomX_ConfigurationSafex::RandomX_ConfigurationSafex()
 RandomX_ConfigurationKeva::RandomX_ConfigurationKeva()
 {
 	ArgonSalt = "RandomKV\x01";
+	ScratchpadL2_Size = 131072;
+	ScratchpadL3_Size = 1048576;
+}
+
+RandomX_ConfigurationTnft::RandomX_ConfigurationTnft()
+{
+	ArgonSalt = "RandomTNFT\x03";
 	ScratchpadL2_Size = 131072;
 	ScratchpadL3_Size = 1048576;
 }
@@ -358,6 +362,7 @@ RandomX_ConfigurationArqma RandomX_ArqmaConfig;
 RandomX_ConfigurationGraft RandomX_GraftConfig;
 RandomX_ConfigurationSafex RandomX_SafexConfig;
 RandomX_ConfigurationKeva RandomX_KevaConfig;
+RandomX_ConfigurationTnft RandomX_TnftConfig;
 
 alignas(64) RandomX_ConfigurationBase RandomX_CurrentConfig;
 
